@@ -93,6 +93,7 @@ int main(int argc, char *argv[]) {
 
     XWindowListener xWindowListener(configs, &app);
 
-    createAppTrayIcon(&app);
+    // createAppTrayIcon(&app);
+    app.setQuitOnLastWindowClosed(false);
     return QApplication::exec();
 }
